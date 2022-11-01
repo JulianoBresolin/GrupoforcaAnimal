@@ -6,8 +6,12 @@
     text-decoration: none;
     font-family: "Segoe UI", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
-    overflow-x: hidden;
+    
    
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .h1s { 
