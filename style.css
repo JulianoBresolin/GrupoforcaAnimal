@@ -93,7 +93,7 @@ gap: 20px;
     text-shadow: 1px 1px 3px #33302A;
 }
 
-.bnt-top, .bnt-top2{
+.bnt-top {
     border-radius: 50px;
     padding: 5px 8px;
     border: 0px;
@@ -102,7 +102,7 @@ gap: 20px;
     box-shadow:7px 7px 20px 0px #0002;
 }
 
-.bnt-top, .bnt-top2:hover {
+.bnt-top:hover {
     background-color: #33302A;
     color: rgb(248, 248, 248);
     box-shadow:
@@ -111,6 +111,27 @@ gap: 20px;
     7px 7px 20px 0px #0002,
     4px 4px 5px 0px #0001;
  }
+
+
+ .bnt-top2{
+    border-radius: 50px;
+    padding: 5px 8px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:7px 7px 20px 0px #0002;
+}
+
+.bnt-top2:hover {
+    background-color: #33302A;
+    color: rgb(248, 248, 248);
+    box-shadow:
+    -7px -7px 20px 0px rgba(255, 127, 127, 0.6),
+    -4px -4px 5px 0px rgba(255, 93, 93, 0.6),
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+ }
+
 
  .bnt-top2{
     display: none;
@@ -143,7 +164,7 @@ gap: 20px;
         top:8vh;
         right: 0;
         width: 30vh;
-        height: 90vh;
+        height: 50vh;
         background: #FDC300;
         flex-direction: column;
         transform: translateX(100%);
@@ -188,6 +209,7 @@ gap: 20px;
       }
  }
  
+
  
 
  .um{
@@ -473,6 +495,7 @@ padding: 10px 70px 10px 70px;
     .reds{
         display: flex;
         flex-direction: column;
+        
   
     }  
     .li-menu-2-redes img{
@@ -481,5 +504,9 @@ padding: 10px 70px 10px 70px;
 
     .ul-menu-2-contato{
         display: none;
+    }
+
+ .footer h4 , .ul-menu-2-redes h3,.ul-menu-2-redes h5 {
+font-size: small;
     }
 }
