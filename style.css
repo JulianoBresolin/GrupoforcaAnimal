@@ -6,8 +6,10 @@
     font-family: "Segoe UI", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
 
-
 }
+
+a {color: inherit;
+} 
 
 .h1s {
     font-weight: 600;
@@ -503,7 +505,12 @@
     text-align: center;
 }
 
-.li-menu-2-contato {
+.ul-menu-2-contato h3 {
+    padding-bottom: 30px;
+    
+}
+
+.li-menu-2-contato a {
     align-items: center;
     display: flex;
     gap: 10px;
@@ -511,6 +518,8 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+
 
 .li-menu-2-contato:hover {
     color: rgb(248, 248, 248);
