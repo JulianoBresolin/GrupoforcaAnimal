@@ -241,7 +241,7 @@ a {color: inherit;
 @media (max-width: 700px) {
 
     .um {
-        
+       
         margin: 20px 50px 0px 50px;
     }
 
@@ -290,17 +290,18 @@ a {color: inherit;
     display: flex;
     gap: 30px;
     flex-direction: column;
-    text-align: center;
-    margin: 20px 300px 10px 300px;
-    padding: 100px;
+    text-align:center;
+    margin: 20px 250px 10px 250px;
+    padding: 80px;
+   
 }
 
 
 
 @media (max-width: 1300px) {
     .dois {
-        text-align: center;
-        margin: 10px;
+        text-align: center ;
+        margin: 5px;
     }
 }
 
