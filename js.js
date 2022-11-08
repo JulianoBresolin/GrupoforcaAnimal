@@ -42,3 +42,15 @@ class MobileNavbar {
     ".li-menu-1",
   );
   mobileNavbar.init();
+
+
+
+  function ScrollLeft(){
+    let left = document.querySelector(".ul-recem-resgatados");
+    left.scrollBy(260,0)
+  }
+
+  function ScrollRight(){
+    let right = document.querySelector(".ul-recem-resgatados");
+    right.scrollBy(-260,0)
+  }
