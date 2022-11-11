@@ -54,3 +54,25 @@ class MobileNavbar {
     let right = document.querySelector(".ul-recem-resgatados");
     right.scrollBy(-260,0)
   }
+
+
+
+
+  // bnt01
+  function copyToClickBoard(){
+    var content = document.getElementById('pix01').innerHTML;
+
+    navigator.clipboard.writeText(content).then(() => {
+    console.log("Text copied to clipboard...")})
+ 
+}
+
+  // bnt02
+  function copyToClickBoard2(){
+    var content = document.getElementById('pix02').innerHTML;
+
+    navigator.clipboard.writeText(content).then(() => {
+    console.log("Text copied to clipboard...")})
+ 
+}
+
