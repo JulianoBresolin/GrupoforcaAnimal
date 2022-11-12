@@ -266,7 +266,7 @@ flex-wrap: wrap;
 gap: 100px;
 justify-content: center;
 align-items: center;
-border: #FDC300 soli;
+background: #FFEFD2;
 padding: 50px;
 }
 
@@ -333,6 +333,25 @@ padding: 50px;
     gap: 80px;
     flex-wrap: wrap;
     padding: 50px;
+    
+}
+
+.transferencias-pix-clinicas .bancos{
+    padding: 40px;
+    background: #FBEFDD;
+    border-radius: 20px;
+}
+
+.transferencias-pix-clinicas .pix{
+    padding: 50px;
+    background: #FFEEE1;
+    border-radius: 20px;
+}
+
+.transferencias-pix-clinicas .clinicas{
+    padding: 30px;
+    background: #F7F0E7;
+    border-radius: 20px;
 }
 
 .transferencias-pix-clinicas ul li{
