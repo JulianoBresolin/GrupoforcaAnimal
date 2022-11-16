@@ -334,10 +334,7 @@ section{
     transition: all 0.3s ease;
 }
 
-.form{
- 
-    padding: 50px;
-}
+
 
 
 input{
@@ -386,6 +383,12 @@ border: 2px solid #FDC300 ;
 #enviar:hover{
     border: 2px solid #FDC300 ;
     background-color: #FDC300;
+    }
+
+   #msg{
+        text-align: center;
+        padding-bottom: 50px;
+        border: #FDC300 solid;
     }
 
 .footer{
