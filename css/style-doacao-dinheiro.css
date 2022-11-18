@@ -277,6 +277,10 @@ padding: 50px;
     gap: 10px;
 }
 
+#b-e-pay{
+    cursor: pointer;
+}
+
 .apoia-se {
     background: #ff5555;
     color: #fff;

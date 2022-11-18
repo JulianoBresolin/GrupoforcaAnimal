@@ -42,9 +42,19 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-
 // bnt01
-function copyToClickBoard() {
+function copyToClickBoard1() {
+  var content = document.getElementById('paypalemail').innerHTML;
+
+  navigator.clipboard.writeText(content).then(() => {
+    console.log("Text copied to clipboard...")
+  })
+
+}
+
+
+// bnt02
+function copyToClickBoard2() {
   var content = document.getElementById('pix01').innerHTML;
 
   navigator.clipboard.writeText(content).then(() => {
@@ -53,8 +63,8 @@ function copyToClickBoard() {
 
 }
 
-// bnt02
-function copyToClickBoard2() {
+// bnt03
+function copyToClickBoard3() {
   var content = document.getElementById('pix02').innerHTML;
 
   navigator.clipboard.writeText(content).then(() => {
