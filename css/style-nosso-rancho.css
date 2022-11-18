@@ -248,6 +248,21 @@ a {color: inherit;
         padding: 8px 20px 8px 20px;
     }
 }
+.um{
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta1{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #000000 5px  solid;
+}
+.alert{
+    max-width: 25%;
+    align-items: center;
+}
 
 .ul-nosso-rancho {
     display: flex;
