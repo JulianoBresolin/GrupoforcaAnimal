@@ -328,10 +328,13 @@ a {color: inherit;
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
     background-color: #FFEEE1;
+    padding: 10px;
 }
+
 
 .emergencia {
     width: 80vh;
@@ -340,6 +343,10 @@ a {color: inherit;
     padding: 30px;
 }
 
+.animal-em{
+    max-width: 400px;
+    border-radius: 10px;
+}
 
 
 .bnte {
@@ -413,7 +420,13 @@ a {color: inherit;
 }
 
 .li-recem-resgatados {
+    border-radius: 10px;
     cursor: pointer;
+}
+
+.li-recem-resgatados img {
+    border-radius: 10px;
+    
 }
 
 .li-recem-resgatados:hover {
@@ -453,11 +466,15 @@ a {color: inherit;
 
 
 
-.Rifa {
+.eventos {
     width: 100vh;
     text-align: justify center;
     text-align: center;
+}
 
+.img-evento{
+    max-width: 300px;
+    border-radius: 10px;
 }
 
 .bntr {

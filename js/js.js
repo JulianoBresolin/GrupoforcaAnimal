@@ -42,6 +42,19 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
+
+//scrollnext
+function Scrollnext(){
+let next = document.querySelector(".ul-recem-resgatados");
+next.scrollBy(300, 0)
+};
+
+//scrollprev
+function Scrollprev(){
+  let next = document.querySelector(".ul-recem-resgatados");
+  next.scrollBy(-300, 0)
+  };
+
 // bnt01
 function copyToClickBoard1() {
   var content = document.getElementById('paypalemail').innerHTML;
@@ -72,6 +85,7 @@ function copyToClickBoard3() {
   })
 
 }
+
 
 //http://localhost/GRUPO_FORCA_ANIMAL/GrupoforcaAnimal/
 
