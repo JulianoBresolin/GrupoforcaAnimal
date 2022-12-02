@@ -8,8 +8,9 @@
 
 }
 
-a {color: inherit;
-} 
+a {
+    color: inherit;
+}
 
 .h1s {
     font-weight: 600;
@@ -107,7 +108,7 @@ a {color: inherit;
 }
 
 .bnt-top {
-    border : #FDC300  solid;
+    border: #FDC300 solid;
     border-radius: 50px;
     padding: 5px 8px;
     cursor: pointer;
@@ -116,7 +117,7 @@ a {color: inherit;
 }
 
 .bnt-top:hover {
-    border : #33302A  solid;
+    border: #33302A solid;
     box-shadow:
         -7px -7px 20px 0px rgba(255, 127, 127, 0.6),
         -4px -4px 5px 0px rgba(255, 93, 93, 0.6),
@@ -126,7 +127,7 @@ a {color: inherit;
 
 
 .bnt-top2 {
-    border : #FDC300  solid;
+    border: #FDC300 solid;
     border-radius: 50px;
     padding: 5px 8px;
     cursor: pointer;
@@ -135,7 +136,7 @@ a {color: inherit;
 }
 
 .bnt-top2:hover {
-    border : #33302A  solid;
+    border: #33302A solid;
     box-shadow:
         -7px -7px 20px 0px rgba(255, 127, 127, 0.6),
         -4px -4px 5px 0px rgba(255, 93, 93, 0.6),
@@ -239,8 +240,8 @@ a {color: inherit;
 
 @media (max-width: 700px) {
 
-    .um {
-       
+    .quatro {
+
         margin: 20px 50px 0px 50px;
     }
 
@@ -248,21 +249,9 @@ a {color: inherit;
         padding: 8px 20px 8px 20px;
     }
 }
-.um{
-    justify-content: center;
-    align-items: center;
-}
 
-.alerta1{
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    border: #000000 5px  solid;
-}
-.alert{
-    max-width: 25%;
-    align-items: center;
-}
+
+
 
 .ul-nosso-rancho {
     display: flex;
@@ -277,27 +266,52 @@ a {color: inherit;
 
 }
 
-.back a{
+.back a {
     display: flex;
     gap: 8px;
-    padding: 30px ;
+    padding: 30px;
 }
 
 
-.li-rancho{
-    flex-shrink: 2;
-    background: #FDC300;
-    border-radius: 10px;
-    padding: 3px;
-    transition: all 0.3s linear;
+
+
+.wraper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 0px;
+
 }
 
-.li-rancho:hover {
 
-    background: #000000;
+.imagem {
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
     border-radius: 10px;
-    padding: 3px;
-    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .wraper .img {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wraper .img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .wraper .img {
+        width: 100%;
+    }
 }
 
 
@@ -305,73 +319,47 @@ a {color: inherit;
     display: flex;
     gap: 30px;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     margin: 20px 300px 10px 300px;
-    padding: 80px;
-   
+    padding: 0px 80px;
+
 }
 
 .tres {
+    padding: 30px 15%;
     align-items: center;
-
+    justify-content: center;
+    text-align: center;
 }
 
-.li-rancho-3{
-    flex-shrink: 2;
-    background: #FDC300;
-    border-radius: 10px;
-    padding: 3px;
-    transition: all 0.3s linear;
+.video-container-2 {
+    margin: 10px;
+    position: relative;
+    padding-bottom: 56.25%;
 }
 
-.li-rancho-3:hover {
-
-    background: #000000;
-    border-radius: 10px;
-    padding: 3px;
-    color: #fff;
+.video-container-2 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.quatro {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    text-align:center;
-    margin: 20px 300px 10px 300px;
-    padding: 80px;
-   
+.video-2 {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
+
 
 
 @media (max-width: 1300px) {
     .dois {
-        text-align: center ;
+        text-align: center;
         margin: 5px;
     }
-    .quatro {
-        text-align: center ;
-        margin: 5px;
-    }
+
 }
-
-@media (max-width: 890px) {
-
-    .li-rancho-3 img{
-        max-width: 500px;
-        
-    }
-    
-}
-
-@media (max-width: 500px) {
-
-    .li-rancho-3 img{
-        max-width: 300px;
-        
-    }
-    
-}
-
 
 .bntr {
     background-color: #FDC300;
@@ -429,7 +417,7 @@ a {color: inherit;
 
 .ul-menu-2-contato h3 {
     padding-bottom: 30px;
-    
+
 }
 
 .li-menu-2-contato a {

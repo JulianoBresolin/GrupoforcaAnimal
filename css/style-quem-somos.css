@@ -295,12 +295,27 @@ a {color: inherit;
    
 }
 
-
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
 
 @media (max-width: 1300px) {
     .dois {
         text-align: center ;
-        margin: 5px;
+        margin: 0px;
     }
 }
 
