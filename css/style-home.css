@@ -86,6 +86,10 @@ a {color: inherit;
     padding: 10px 70px 10px 70px;
 }
 
+.top img{
+    height: 90px;
+}
+
 .ul-menu-1 {
     display: flex;
     flex-direction: row;
@@ -237,7 +241,7 @@ a {color: inherit;
 
 
 
-.um {
+.sessao-tipos-de-ajuda {
     text-align: center;
     margin: 20px 200px 0px 200px;
 
@@ -245,17 +249,11 @@ a {color: inherit;
 
 @media (max-width: 700px) {
 
-    .um {
+    .sessao-tipos-de-ajuda {
         text-align: center;
         margin: 20px 50px 0px 50px;
     }
 
-    .um h2 {
-
-        font-size: 20px;
-        text-align: center;
-        margin: 0;
-    }
 
     .top {
         padding: 8px 20px 8px 20px;
@@ -275,6 +273,10 @@ a {color: inherit;
 
 }
 
+.ul-cards img{
+    height: 180px;
+}
+
 .li-cards {
     flex-shrink: 2;
     cursor: pointer;
@@ -292,7 +294,7 @@ a {color: inherit;
     color: #fff;
 }
 
-.dois {
+.Sessao-quem-somos {
     text-align: center;
     margin: 40px 250px 50px 250px;
 }
@@ -303,28 +305,28 @@ a {color: inherit;
     flex-direction: row;
     gap: 50px;
     justify-content: center;
-    margin: 30px 0px 30px 0px;
+    margin: 50px 0px 50px 0px;
     list-style: none;
     text-align: center;
     flex-wrap: wrap;
 }
 
 .li-quem-somos {
-    width: 400px;
+    width: 300px;
 }
 
-.h5r2 {
+.texto-center {
     text-align: justify;
 }
 
 @media (max-width: 700px) {
-    .dois {
+    .Sessao-quem-somos {
         text-align: center;
         margin: 40px 50px 50px 50px;
     }
 }
 
-.tres {
+.sessao-emergencia {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -372,12 +374,12 @@ a {color: inherit;
 }
 
 @media (max-width: 600px) {
-    .tres img {
+    .sessao-emergencia img {
         width: 350px;
     }
 }
 
-.quatro {
+.sessaao-insta {
     text-align: center;
     margin: 30px;
     align-items: center;
@@ -452,9 +454,9 @@ a {color: inherit;
     }
 }
 
-@media (max-width: 400px) {}
 
-.cinco {
+
+.sessao-eventos {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -495,6 +497,8 @@ a {color: inherit;
         7px 7px 20px 0px #0002,
         4px 4px 5px 0px #0001;
 }
+
+
 
 .footer {
     display: flex;
@@ -558,12 +562,6 @@ a {color: inherit;
 
 }
 
-.reds {
-    display: flex;
-    gap: 20px;
-
-}
-
 .li-menu-2-redes {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -576,20 +574,11 @@ a {color: inherit;
     text-shadow: 1px 1px 3px #33302A;
 }
 
-@media (max-width: 999px) {
-    .reds {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-}
+
 
 @media (max-width: 700px) {
-    .reds {
-        display: flex;
-        flex-direction: column;
-
-
+    .footer {
+        padding: 10px 30px 10px 30px;
     }
 
     .li-menu-2-redes img {
@@ -600,9 +589,5 @@ a {color: inherit;
         display: none;
     }
 
-    .footer h4,
-    .ul-menu-2-redes h3,
-    .ul-menu-2-redes h5 {
-        font-size: small;
-    }
+
 }
