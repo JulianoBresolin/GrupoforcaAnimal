@@ -42,50 +42,54 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
-
 //scrollnext
 function Scrollnext(){
-let next = document.querySelector(".ul-recem-resgatados");
-next.scrollBy(300, 0)
+  let next = document.querySelector(".ul-recem-resgatados");
+  next.scrollBy(300, 0)
 };
 
 //scrollprev
 function Scrollprev(){
   let next = document.querySelector(".ul-recem-resgatados");
   next.scrollBy(-300, 0)
-  };
+};
 
 // bnt01
 function copyToClickBoard1() {
-  var content = document.getElementById('paypalemail').innerHTML;
+  const content = document.getElementById('paypalemail').textContent;
+  const encodedContent = encodeURIComponent(content);
 
   navigator.clipboard.writeText(content).then(() => {
     console.log("Text copied to clipboard...")
-  })
-
+  }).catch((error) => {
+    console.error("Error copying text to clipboard: ", error);
+  });
 }
+
 
 
 // bnt02
 function copyToClickBoard2() {
-  var content = document.getElementById('pix01').innerHTML;
+  const content = document.getElementById('pix01').textContent;
+  const numericContent = content.replace(/[^\d]/g, ""); // remove todos os caracteres não numéricos
+  const encodedContent = encodeURIComponent(numericContent);
 
-  navigator.clipboard.writeText(content).then(() => {
+  navigator.clipboard.writeText(encodedContent).then(() => {
     console.log("Text copied to clipboard...")
-  })
-
+  }).catch((error) => {
+    console.error("Error copying text to clipboard: ", error);
+  });
 }
 
 // bnt03
 function copyToClickBoard3() {
-  var content = document.getElementById('pix02').innerHTML;
-
-  navigator.clipboard.writeText(content).then(() => {
-    console.log("Text copied to clipboard...")
-  })
-
-}
-
-
-//http://localhost/GRUPO_FORCA_ANIMAL/GrupoforcaAnimal/
-
+  const content = document.getElementById('pix02').textContent;
+  const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+  const encodedContent = encodeURIComponent(strippedContent);
+  
+  navigator.clipboard.writeText(encodedContent).then(() => {
+  console.log("Text copied to clipboard...")
+  }).catch((error) => {
+  console.error("Error copying text to clipboard: ", error);
+  });
+  }
