@@ -417,7 +417,7 @@ a {
 	align-items: center;
 	flex-direction: row;
 	gap: 20px;
-	justify-content: center;
+	justify-content: left;
 	margin: 40px;
 	list-style: none;
 	overflow-x: auto;
@@ -474,7 +474,7 @@ a {
 }
 
 .img-evento {
-	max-width: 300px;
+	max-height: 300px;
 	border-radius: 10px;
 }
 

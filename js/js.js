@@ -45,13 +45,13 @@ mobileNavbar.init();
 //scrollnext
 function Scrollnext(){
   let next = document.querySelector(".ul-recem-resgatados");
-  next.scrollBy(300, 0)
+  next.scrollBy(320, 0)
 };
 
 //scrollprev
 function Scrollprev(){
   let next = document.querySelector(".ul-recem-resgatados");
-  next.scrollBy(-300, 0)
+  next.scrollBy(-320, 0)
 };
 
 // bnt01
