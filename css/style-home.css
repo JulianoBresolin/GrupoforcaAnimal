@@ -331,7 +331,7 @@ a {
 }
 
 .texto-center {
-	text-align: justify;
+	text-align: center;
 }
 
 @media (max-width: 700px) {
