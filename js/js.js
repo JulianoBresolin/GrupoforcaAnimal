@@ -1,3 +1,41 @@
+const imagesToCache = [
+  "assents/home/logo-1-top.webp",
+  "assents/home/sessao1/adotar.webp",
+  "assents/home/sessao1/lar-temporario.webp",
+  "assents/home/sessao1/doar-dindin.webp",
+  "assents/home/sessao1/doar-produtos.webp",
+  "assents/home/sessao1/ser-voluntario.webp",
+  "assents/home/sessao3/animal-emergencia.webp",
+  "assents/home/sessao4/animal-1.webp",
+  "assents/home/sessao4/animal-2.webp",
+  "assents/home/sessao4/animal-3.webp",
+  "assents/home/sessao4/animal-4.webp",
+  "assents/home/sessao4/animal-5.webp",
+  "assents/home/sessao5/evento-img.webp",
+  // Adicione mais URLs de imagem aqui
+];
+
+const cacheImages = () => {
+  const imagePromises = imagesToCache.map((imageUrl) => {
+    return new Promise((resolve, reject) => {
+      const image = new Image();
+      image.src = imageUrl;
+      image.onload = resolve;
+      image.onerror = reject;
+    });
+  });
+
+  return Promise.all(imagePromises);
+};
+
+cacheImages()
+  .then(() => {
+    console.log('Imagens pré-carregadas com sucesso.');
+  })
+  .catch((error) => {
+    console.error('Erro ao pré-carregar imagens:', error);
+  });
+
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
@@ -93,3 +131,7 @@ function copyToClickBoard3() {
   console.error("Error copying text to clipboard: ", error);
   });
   }
+
+
+
+  
