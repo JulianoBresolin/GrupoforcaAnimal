@@ -354,6 +354,8 @@ a {
 
 .animal-em {
 	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
 }
 
 .bnte {
@@ -467,6 +469,8 @@ a {
 
 .img-evento {
 	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
 }
 
 .bntr {
