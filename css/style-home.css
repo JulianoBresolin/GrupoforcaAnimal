@@ -88,10 +88,6 @@ a {
 	padding: 10px 70px 10px 70px;
 }
 
-.top img {
-	height: 90px;
-}
-
 .ul-menu-1 {
 	display: flex;
 	flex-direction: row;
@@ -188,6 +184,7 @@ a {
 	margin-left: 10px;
 	border-radius: 5px;
 	font-weight: bold;
+	font-size: 16px;
 }
 
 @media (max-width: 999px) {
@@ -288,10 +285,6 @@ a {
 	flex-wrap: wrap;
 }
 
-.ul-cards img {
-	height: 180px;
-}
-
 .li-cards {
 	flex-shrink: 2;
 	cursor: pointer;
@@ -360,7 +353,6 @@ a {
 }
 
 .animal-em {
-	max-width: 400px;
 	border-radius: 10px;
 }
 
@@ -474,7 +466,6 @@ a {
 }
 
 .img-evento {
-	max-height: 300px;
 	border-radius: 10px;
 }
 
@@ -564,10 +555,6 @@ a {
 @media (max-width: 700px) {
 	.footer {
 		padding: 10px 30px 10px 30px;
-	}
-
-	.li-menu-2-redes img {
-		max-width: 30px;
 	}
 
 	.ul-menu-2-contato {
