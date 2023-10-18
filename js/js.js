@@ -93,45 +93,98 @@ function Scrollprev(){
 };
 
 // bnt01
-function copyToClickBoard1() {
+function copyToClickBoardPayPal() {
   const content = document.getElementById('paypalemail').textContent;
   const encodedContent = encodeURIComponent(content);
 
   navigator.clipboard.writeText(content).then(() => {
-    console.log("Text copied to clipboard...")
+    alert("O Email foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
   }).catch((error) => {
     console.error("Error copying text to clipboard: ", error);
   });
 }
 
 
-
-// bnt02
-function copyToClickBoard2() {
-  const content = document.getElementById('pix01').textContent;
-  const numericContent = content.replace(/[^\d]/g, ""); // remove todos os caracteres não numéricos
-  const encodedContent = encodeURIComponent(numericContent);
-
-  navigator.clipboard.writeText(encodedContent).then(() => {
-    console.log("Text copied to clipboard...")
-  }).catch((error) => {
-    console.error("Error copying text to clipboard: ", error);
-  });
-}
-
-// bnt03
-function copyToClickBoard3() {
-  const content = document.getElementById('pix02').textContent;
+function copyToClickBoardCPF() {
+  const content = document.getElementById('CopyCPF').textContent;
   const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
   const encodedContent = encodeURIComponent(strippedContent);
   
   navigator.clipboard.writeText(encodedContent).then(() => {
-  console.log("Text copied to clipboard...")
+    alert("O Numero de CPF foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
   }).catch((error) => {
   console.error("Error copying text to clipboard: ", error);
   });
   }
 
+  function copyToClickBoardCNPJ() {
+    const content = document.getElementById('CopyCNPJ').textContent;
+    const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+    const encodedContent = encodeURIComponent(strippedContent);
+    
+    navigator.clipboard.writeText(encodedContent).then(() => {
+    alert("O Numero de CNPJ foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
+    }).catch((error) => {
+    console.error("Error copying text to clipboard: ", error);
+    });
+    }
 
+    function copyToClickBoardAGI() {
+      const content = document.getElementById('AGI').textContent;
+      const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+      const encodedContent = encodeURIComponent(strippedContent);
+      
+      navigator.clipboard.writeText(encodedContent).then(() => {
+      alert("O Numero da Agência foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
+      }).catch((error) => {
+      console.error("Error copying text to clipboard: ", error);
+      });
+      }
 
-  
+      function copyToClickBoardCCI() {
+        const content = document.getElementById('CCI').textContent;
+        const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+        const encodedContent = encodeURIComponent(strippedContent);
+        
+        navigator.clipboard.writeText(encodedContent).then(() => {
+        alert("O Numero da Conta foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
+        }).catch((error) => {
+        console.error("Error copying text to clipboard: ", error);
+        });
+        }
+
+        function copyToClickBoardAGX() {
+          const content = document.getElementById('AGX').textContent;
+          const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+          const encodedContent = encodeURIComponent(strippedContent);
+          
+          navigator.clipboard.writeText(encodedContent).then(() => {
+          alert("O Numero da Agência foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
+          }).catch((error) => {
+          console.error("Error copying text to clipboard: ", error);
+          });
+          }
+
+          function copyToClickBoardOPX() {
+            const content = document.getElementById('OPX').textContent;
+            const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+            const encodedContent = encodeURIComponent(strippedContent);
+            
+            navigator.clipboard.writeText(encodedContent).then(() => {
+            alert("O Numero de Operação foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
+            }).catch((error) => {
+            console.error("Error copying text to clipboard: ", error);
+            });
+            }
+
+            function copyToClickBoardCCX() {
+              const content = document.getElementById('CCX').textContent;
+              const strippedContent = content.replace(/[^\d]/g, ''); // Remove all non-digit characters
+              const encodedContent = encodeURIComponent(strippedContent);
+              
+              navigator.clipboard.writeText(encodedContent).then(() => {
+              alert("O Numero da Conta foi copiado. Use Crtl+V para colar o conteúdo na area de transferência.")
+              }).catch((error) => {
+              console.error("Error copying text to clipboard: ", error);
+              });
+              }
